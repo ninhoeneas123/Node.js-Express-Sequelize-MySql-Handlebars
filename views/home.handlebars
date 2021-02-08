@@ -1,0 +1,10 @@
+<h1>Postagens:</h1>
+{{#each posts}}
+    <h1>{{dataValues.title}}</h1>
+   <p>{{dataValues.content}}</p>
+   <small>{{dataValues.createdAt}}</small><br>
+   <a href="deletar/{{dataValues.id}}"><button>Apagar</button></a>
+    <hr>
+{{/each}}
+<a href="/cad"><button>Fazer uma postagem</button></a>
+<a href="/api"><button>Api</button></a>
